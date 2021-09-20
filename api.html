@@ -1,0 +1,51 @@
+ <!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>api table</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="api.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <h1> api table with some functionality</h1>
+    <div class="filter_container">
+      <input type="text" oninput="inputChange(this)" placeholder="search.." />
+      <span class="material-icons filter" onclick="filter()"> filter_list</span>
+      <div id="filtershow">
+        <a onclick="NameFilter()">Name</a>
+        <a onclick=" AirlineNameFilter()">AirlineName</a>
+        <a onclick="CountryFilter()">Country</a>
+      </div>
+    </div>
+    <h1 id="h1"></h1>
+    <table id="table" class="table table-hover">
+      <thead>
+        <tr>
+          <th >Name <span onclick="Nameshorting(this)"class="material-icons ">arrow_upward</span></th>
+          <th>AirlineName <span onclick="Airlinenameshort(this)" class="material-icons"> arrow_upward</span></th>
+          <th>Country<span onclick="Countryshorting(this)" class="material-icons"> arrow_upward</span> </th>
+        </tr>
+      </thead>
+      <tbody id="tbody">
+
+      </tbody>
+    </table>
+    <ul id="pagination">
+
+    </ul>
+  </div>
+   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>  
+</body>
+<script src="api.js">
+  
+</script>
+
+</html>  
