@@ -1,0 +1,33 @@
+#pagination {
+    display:inline-flex;
+    margin-top: 5px;
+margin-bottom: 15px;
+  }
+  #first{
+    margin-right: 10px;
+  }
+  #last{
+    margin-left: 10px;
+  }
+  
+  #pagination button.active,#pagination button:hover{
+    background: gray;
+  }
+  .filter_container{
+      display:inline-flex;
+      align-items: center;
+  }
+  .filter{
+      padding: 10px;
+  }
+  #filtershow a{
+      font-size: 2rem;
+      margin: 0 5px;
+      padding: 10px;
+    text-decoration: none;
+  }
+  #filtershow a:hover,.filter:hover{
+      background: gray;
+      border-radius: 10px;
+      color: white;
+  } 
